@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathPrep - Persiapan Matematika</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>MathPrep</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="materi.html">Materi</a>
+            <a href="latihan.html">Latihan</a>
+            <a href="tryout.html">Try Out</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Try Out Matematika</h2>
+        <div id="timer">00:10:00</div>
+        <div id="soal-tryout">
+            <p>1. Berapa nilai x dari 3x - 5 = 10?</p>
+            <input type="radio" name="q1" value="5"> 5<br>
+            <input type="radio" name="q1" value="7"> 7<br>
+        </div>
+        <button id="submit-btn">Submit Jawaban</button>
+    </main>
+    <script>
+        // Timer countdown
+        let time = 600; // 10 menit
+        setInterval(() => {
+            const minutes = Math.floor(time / 60);
+            const seconds = time % 60;
+            document.getElementById("timer").textContent = 
+                `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            time--;
+            if (time < 0) alert("Waktu habis!");
+        }, 1000);
+    </script>
+</body>
+</html>
