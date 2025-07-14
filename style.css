@@ -1,172 +1,99 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
   color: #333;
-  padding-bottom: 50px;
 }
 
-/* Navbar */
 nav {
-  background-color: #ffffff;
-  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  justify-content: center;
+  gap: 40px;
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-nav .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #6c63ff;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links li a {
+nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  color: #444;
+  font-weight: 600;
 }
 
-.nav-links li a:hover {
-  color: #6c63ff;
-}
-
-/* Hero Section */
-.hero {
+header {
   display: flex;
   flex-wrap: wrap;
+  background-color: #eee;
+  padding: 40px 20px;
   align-items: center;
-  justify-content: space-between;
-  background: #e6e6ff;
-  padding: 3rem 2rem;
-  text-align: left;
+  justify-content: center;
 }
 
-.hero-text {
-  max-width: 500px;
-}
-
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
-}
-
-.hero p {
-  margin-bottom: 1.5rem;
-}
-
-.hero .btn {
-  background-color: #6c63ff;
-  color: #fff;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero-image img {
-  max-width: 350px;
-}
-
-/* Section Umum */
-section {
-  padding: 3rem 2rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #6c63ff;
-}
-
-/* About Section */
-.about-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.profile-img {
-  width: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Services */
-.services ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.services ul li {
-  margin: 0.5rem 0;
-  padding-left: 1.2rem;
-  position: relative;
-}
-
-.services ul li::before {
-  content: '✔';
-  position: absolute;
-  left: 0;
-  color: #6c63ff;
-}
-
-/* Testimonial */
-.testimonial {
-  background-color: #f0f0ff;
-  padding: 2rem;
-  border-left: 5px solid #6c63ff;
-  margin: 2rem 0;
-  font-style: italic;
-}
-
-/* CTA */
-.cta {
-  background-color: #6c63ff;
-  color: #fff;
-  text-align: center;
-  padding: 2.5rem 1.5rem;
+header img {
+  max-width: 400px;
   border-radius: 8px;
-  margin: 2rem;
 }
 
-.cta .btn {
+.intro-text {
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.intro-text h1 {
+  font-size: 24px;
+  color: #b40000;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.tab-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background-color: #222;
+}
+
+.tab-content {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
   background-color: #fff;
-  color: #6c63ff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* Footer */
+.tab-content.active {
+  display: block;
+}
+
 footer {
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 2rem;
-  background-color: #fff;
-  color: #999;
-  font-size: 0.9rem;
-  box-shadow: 0 -1px 4px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-top: 40px;
 }
