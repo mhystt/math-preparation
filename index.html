@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathPrep - Persiapan Matematika</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathPrep | Kursus Matematika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>MathPrep</h1>
-        <!-- NAVIGATION -->
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="materi.html">Materi</a>
-            <a href="latihan.html">Latihan</a>
-            <a href="tryout.html">Try Out</a>
-            <a href="contact.html">Kontak</a>
-        </nav>
-    </header>
-    <main>
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Belajar Matematika Jadi Lebih Mudah</h1>
-        <p>Bersama Bu Intan - tutor matematika berpengalaman untuk SMP & SMA kurikulum nasional maupun internasional.</p>
-        <a href="contact.html" class="btn">Hubungi Sekarang</a>
-    </section>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Information</a>
+    <a href="#">Offers</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <!-- ABOUT -->
-    <section class="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya Intan, tutor matematika yang telah membantu siswa memahami pelajaran dengan pendekatan yang terstruktur, visual, dan menyenangkan.  
-        Fokus saya adalah membimbing siswa agar percaya diri menghadapi ujian sekolah maupun persiapan masuk universitas.</p>
-    </section>
+  <header>
+    <img src="https://images.pexels.com/photos/5905707/pexels-photo-5905707.jpeg" alt="Tutor dan siswa belajar">
+    <div class="intro-text">
+      <h1>Belajar Matematika Jadi Lebih Terarah & Menyenangkan</h1>
+      <p>Kami siap mendampingi kamu dari dasar hingga mahir, dengan suasana belajar yang nyaman, menyenangkan, dan tetap serius. Belajar matematika tak lagi jadi beban — tapi jadi keahlian yang kamu kuasai!</p>
+    </div>
+  </header>
 
-    <!-- SERVICES -->
-    <section class="services">
-        <h2>Layanan Saya</h2>
-        <ul>
-        <li>📘 Bimbingan Matematika SMP & SMA (Kurikulum Nasional)</li>
-        <li>📚 Kelas Persiapan Ujian Sekolah & UTBK</li>
-        <li>💻 Kelas Online Interaktif (via Google Meet + Tulis Tangan Digital)</li>
-        <li>📄 Akses Materi & Latihan Soal di Website</li>
-        </ul>
-    </section>
+  <div class="section-tabs">
+    <button class="tab-button" onclick="showTab('offer')">What we offer</button>
+    <button class="tab-button" onclick="showTab('curriculum')">Curriculum</button>
+    <button class="tab-button" onclick="showTab('online')">Online Learning</button>
+    <button class="tab-button" onclick="showTab('offline')">Offline Learning</button>
+    <button class="tab-button" onclick="showTab('hybrid')">Hybrid</button>
+  </div>
 
-    <!-- TESTIMONIAL (PLACEHOLDER) -->
-    <section class="testimonial">
-        <h2>Kata Mereka</h2>
-        <p><i>“Bu Intan ngajarnya enak banget, pelan-pelan tapi bikin ngerti. Nilai ulangan aku naik!”</i> – Siswa SMA</p>
-    </section>
+  <div id="offer" class="tab-content active">
+    <h2>What we offer</h2>
+    <p>
+      Di <strong>MathPrep</strong>, kami percaya bahwa setiap siswa bisa memahami matematika dengan pendekatan yang tepat. Kami menghadirkan bimbingan belajar yang terstruktur, fleksibel, dan disesuaikan dengan kebutuhan masing-masing siswa — baik secara online maupun offline.
+    </p>
+    <ul>
+      <li>Penjelasan konsep yang mudah dipahami</li>
+      <li>Visualisasi dan latihan bertahap</li>
+      <li>Soal-soal latihan berbasis ujian (UTBK, Ujian Sekolah, dll)</li>
+      <li>Interaksi dua arah dan latihan langsung</li>
+      <li>Melatih berpikir kritis, percaya diri, dan menyusun strategi menyelesaikan soal</li>
+    </ul>
+  </div>
 
-    <!-- CALL TO ACTION -->
-    <section class="cta">
-        <h3>Yuk Mulai Belajar Hari Ini</h3>
-        <p>Jadwalkan kelas pertamamu sekarang, dan rasakan bedanya!</p>
-        <button><a href="materi.html">Mulai Belajar</a></button>
-        <a href="contact.html" class="btn">Konsultasi Gratis</a>
-    </section>
+  <div id="curriculum" class="tab-content">
+    <h2>Curriculum</h2>
+    <p>Kami mengikuti kurikulum Cambridge, Nasional, dan kebutuhan siswa khusus. Materi disesuaikan agar siswa tidak hanya mengejar nilai, tapi juga memahami konsep secara mendalam.</p>
+  </div>
 
-    <footer>
-        <p>© 2024 MathPrep. All rights reserved.</p>
-    </footer>
+  <div id="online" class="tab-content">
+    <h2>Online Learning</h2>
+    <p>Belajar dari rumah dengan sesi live interaktif, rekaman belajar, dan latihan mandiri berbasis sistem. Cocok untuk siswa yang mandiri namun tetap butuh bimbingan.</p>
+  </div>
+
+  <div id="offline" class="tab-content">
+    <h2>Offline Learning</h2>
+    <p>Sesi tatap muka langsung untuk pengalaman belajar intensif. Cocok untuk siswa yang ingin interaksi langsung dan lingkungan belajar fokus.</p>
+  </div>
+
+  <div id="hybrid" class="tab-content">
+    <h2>Hybrid</h2>
+    <p>Kombinasi online dan offline yang fleksibel. Siswa bisa memilih model yang sesuai dengan gaya belajar dan jadwal mereka.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MathPrep. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
